@@ -1,0 +1,35 @@
+/*******************************************************************************
+ * tlx/main.dox
+ *
+ * Main doxygen group
+ *
+ * Part of tlx - http://panthema.net/tlx
+ *
+ * Copyright (C) 2017 Timo Bingmann <tb@panthema.net>
+ *
+ * All rights reserved. Published under the Boost Software License, Version 1.0
+ ******************************************************************************/
+
+namespace tlx {
+
+/******************************************************************************/
+/*!
+
+\defgroup tlx tlx - C++ Extensions and Utilities
+\{
+
+\defgroup tlx_data_structures Data Structures
+\defgroup tlx_math Math Functions
+\defgroup tlx_meta Meta-Template Programming
+\defgroup tlx_string String Algorithms
+
+\}
+
+*/
+
+//! \defgroup tlx_data_structures Data Structures
+//! data structures
+
+} // namespace tlx
+
+/******************************************************************************/
