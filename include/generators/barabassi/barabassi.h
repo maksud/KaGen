@@ -11,6 +11,8 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
+#include <cstdlib>
 #include <vector>
 
 #include "definitions.h"
