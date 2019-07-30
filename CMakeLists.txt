@@ -40,12 +40,6 @@ set(KAGEN_INCLUDE_DIRS
   ${PROJECT_SOURCE_DIR}/include
   ${PROJECT_SOURCE_DIR}/include/generators
   ${PROJECT_SOURCE_DIR}/include/generators/barabassi
-  ${PROJECT_SOURCE_DIR}/include/generators/geometric
-  ${PROJECT_SOURCE_DIR}/include/generators/geometric/delaunay
-  ${PROJECT_SOURCE_DIR}/include/generators/geometric/rgg
-  ${PROJECT_SOURCE_DIR}/include/generators/gnm
-  ${PROJECT_SOURCE_DIR}/include/generators/gnp
-  ${PROJECT_SOURCE_DIR}/include/generators/hyperbolic
   ${PROJECT_SOURCE_DIR}/include/io
   ${PROJECT_SOURCE_DIR}/include/tools
   ${PROJECT_SOURCE_DIR}/interface/
@@ -54,9 +48,9 @@ set(KAGEN_INCLUDE_DIRS
 if(NOT MSVC)
   # enable warnings
   if(CMAKE_BUILD_TYPE MATCHES Debug)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -g -W -Wall -Wextra -fPIC -fpermissive")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O3 -W -Wall -Wextra -fPIC -fpermissive")
   else()
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O3 -g -W -Wall -Wextra -fPIC -fpermissive")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O3 -W -Wall -Wextra -fPIC -fpermissive")
   endif()
 
   # enable more warnings
@@ -259,14 +253,6 @@ else()
   message(STATUS "Could not find MPI library")
 endif()
 
-# find CGAL
-set(CGAL_DONT_OVERRIDE_CMAKE_FLAGS TRUE CACHE BOOL "Force CGAL to maintain CMAKE flags")
-find_package(CGAL)
-if(CGAL_FOUND)
-  include(${CGAL_USE_FILE})
-else()
-  message(STATUS "Could not find CGAL library")
-endif()
 
 # use sampling lib
 add_subdirectory(extlib/sampling)
