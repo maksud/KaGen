@@ -24,13 +24,6 @@ int main(int argn, char **argv) {
 
   // Run generator
   KaGen gen(rank, size);
-  gen.GenerateDirectedGNM(num_vertices, num_edges);
-  gen.GenerateUndirectedGNM(num_vertices, num_edges);
-  gen.Generate2DRGG(num_vertices, 0.0072);
-  gen.Generate3DRGG(num_vertices, 0.01);
-  gen.Generate2DRDG(num_vertices);
-  gen.Generate3DRDG(num_vertices);
-  gen.GenerateRHG(num_vertices, 3.0, 16);
   gen.GenerateBA(num_vertices, 16);
   
   MPI_Finalize();

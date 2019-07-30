@@ -10,6 +10,7 @@
 #define _BARABASSI_H_
 
 #include <iostream>
+#include <iomanip>
 #include <vector>
 
 #include "definitions.h"

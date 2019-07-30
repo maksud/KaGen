@@ -13,13 +13,6 @@ file(GLOB GENERATOR_SRCS
   RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}/*.[ch]pp
   ${CMAKE_CURRENT_SOURCE_DIR}/generators/barabassi/*.[ch]pp
-  ${CMAKE_CURRENT_SOURCE_DIR}/generators/geometric/*.[ch]pp
-  ${CMAKE_CURRENT_SOURCE_DIR}/generators/geometric/delaunay/*.[ch]pp
-  ${CMAKE_CURRENT_SOURCE_DIR}/generators/geometric/rgg/*.[ch]pp
-  ${CMAKE_CURRENT_SOURCE_DIR}/generators/gnm/*.[ch]pp
-  ${CMAKE_CURRENT_SOURCE_DIR}/generators/gnp/*.[ch]pp
-  ${CMAKE_CURRENT_SOURCE_DIR}/generators/hyperbolic/*.[ch]pp
-  # ${CMAKE_CURRENT_SOURCE_DIR}/generators/kronecker/*.[ch]pp
   ${CMAKE_CURRENT_SOURCE_DIR}/io/*.[ch]pp
   ${CMAKE_CURRENT_SOURCE_DIR}/tools/*.[ch]pp
   )
@@ -28,13 +21,6 @@ set(GENERATOR_INCS
   ${PROJECT_SOURCE_DIR}
   ${PROJECT_SOURCE_DIR}/include/generators
   ${PROJECT_SOURCE_DIR}/include/generators/barabassi
-  ${PROJECT_SOURCE_DIR}/include/generators/geometric
-  ${PROJECT_SOURCE_DIR}/include/generators/geometric/delaunay
-  ${PROJECT_SOURCE_DIR}/include/generators/geometric/rgg
-  ${PROJECT_SOURCE_DIR}/include/generators/gnm
-  ${PROJECT_SOURCE_DIR}/include/generators/gnp
-  ${PROJECT_SOURCE_DIR}/include/generators/hyperbolic
-  ${PROJECT_SOURCE_DIR}/include/generators/kronecker
   ${PROJECT_SOURCE_DIR}/include/io
   ${PROJECT_SOURCE_DIR}/include/tools
   )
